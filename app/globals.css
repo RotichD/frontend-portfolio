@@ -6,4 +6,8 @@
   .navLink {
     @apply hover:text-neutral-700 hover:border-b-2 border-secondary transition duration-200;
   }
+
+  .techTag {
+    @apply font-roboto text-white text-xs md:text-sm bg-secondary shadow-md py-0.5 px-2 mb-2 rounded-lg;
+  }
 }

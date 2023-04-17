@@ -26,7 +26,7 @@ function Hero() {
           Front-End React Developer
         </h1>
         <p className='text-secondary md:text-xl'>San Francisco Bay Area</p>
-        <p className='md:text-xl max-w-md'>
+        <p className='md:text-xl max-w-md text-justify'>
           Known as a creative problem solver and supporting team member, I
           eagerly approach each project with a focus on mobile first design and
           brand image.

@@ -1,14 +1,27 @@
+import Image from 'next/image';
+import devCoding from '../public/images/developer_coding.svg';
+import Spacer from './Spacer';
+
 function About() {
   return (
     <>
-      <h2 className='font-roboto font-bold text-5xl mt-24'>About Me</h2>
+      <Spacer />
+      <h2 id='about' className='font-roboto font-bold text-5xl mt-12'>
+        About Me
+      </h2>
       <div className='max-w-screen-lg 2xl:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 w-full p-4 md:p-8 mt-8'>
-        <div></div>
-        <div className='space-y-2'>
+        <div className='flex justify-center'>
+          <Image
+            src={devCoding}
+            alt='coding illustration'
+            className=' max-w-sm'
+          />
+        </div>
+        <div className='space-y-2 p-8'>
           <h3 className='font-roboto font-bold text-2xl text-secondary'>
             Background
           </h3>
-          <p className='text-offBlack text-lg text-justify'>
+          <p className='text-offBlack md:text-xl text-justify'>
             I'm a{' '}
             <a
               href='https://www.parchment.com/u/award/736ee44d1db73c2713dcb0a7b6f90921'

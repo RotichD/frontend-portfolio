@@ -5,7 +5,7 @@ function NavBar() {
     <nav className='bg-white fixed w-full z-20 top-0 left-0 border-b text-black font-roboto md:border-none'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
         <Link href='#home' className='flex items-center'>
-          <span className='self-center text-2xl font-semibold whitespace-nowrap ml-3'>
+          <span className='self-center text-2xl font-semibold'>
             Dylan Rotich
           </span>
         </Link>
@@ -16,12 +16,12 @@ function NavBar() {
         >
           <ul className='flex flex-col md:items-center p-4 md:p-0 mt-4 border font-bold border-gray-100  md:flex-row md:space-x-8 md:mt-0 md:border-0'>
             <li>
-              <a href='#' className='navLink'>
+              <a href='#about' className='navLink'>
                 About
               </a>
             </li>
             <li>
-              <a href='#' className='navLink'>
+              <a href='#projects' className='navLink'>
                 Projects
               </a>
             </li>
