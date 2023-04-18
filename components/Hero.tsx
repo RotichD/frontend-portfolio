@@ -1,6 +1,6 @@
-import React from 'react';
 import headshot from '../public/images/headshot.jpg';
 import Image from 'next/image';
+import { MdLocationPin } from 'react-icons/md';
 
 import {
   SiTypescript,
@@ -8,8 +8,6 @@ import {
   SiNodedotjs,
   SiHtml5,
   SiCss3,
-  SiExpress,
-  SiMongodb,
   SiTailwindcss,
   SiNextdotjs,
   SiFirebase,
@@ -17,28 +15,27 @@ import {
 
 function Hero() {
   return (
-    <div
-      id='home'
-      className='max-w-screen-lg 2xl:max-w-screen-xl w-full flex flex-col items-center justify-around md:flex-row p-4 md:p-8'
-    >
-      <div className='flex flex-col space-y-4 max-w-2xl'>
-        <h1 className='font-roboto font-bold text-5xl md:text-7xl 2xl:text-8xl'>
+    <div className='flex min-h-screen w-full max-w-screen-lg flex-col items-center justify-around p-8 md:flex-row 2xl:max-w-screen-xl'>
+      <div className='flex max-w-2xl flex-col space-y-4'>
+        <h1 className='font-roboto text-5xl font-bold md:text-7xl 2xl:text-8xl'>
           Front-End React Developer
         </h1>
-        <p className='text-secondary md:text-xl'>San Francisco Bay Area</p>
-        <p className='md:text-xl max-w-md text-justify'>
+        <p className='flex items-center text-secondary md:text-xl'>
+          <MdLocationPin />
+          San Francisco Bay Area
+        </p>
+        <p className='max-w-md text-justify md:text-xl'>
           Known as a creative problem solver and supporting team member, I
           eagerly approach each project with a focus on mobile first design and
           brand image.
         </p>
         <div className='text-secondary'>
-          <div className='flex items-center text-2xl space-x-2'>
+          <div className='flex items-center space-x-2 text-2xl'>
             <SiReact />
             <SiTypescript />
             <SiTailwindcss />
             <SiNextdotjs />
-            <SiMongodb />
-            <SiExpress />
+
             <SiNodedotjs />
             <SiHtml5 />
             <SiCss3 />
@@ -49,7 +46,7 @@ function Hero() {
       <Image
         src={headshot}
         alt='Dylan Rotich Business Portrait'
-        className='rounded-full object-cover object-center mt-5 md:mt-0'
+        className='mt-5 rounded-full object-cover object-center md:mt-0'
         height={400}
       />
     </div>

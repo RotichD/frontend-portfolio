@@ -1,20 +1,18 @@
 import ProjectCard from './ProjectCard';
-import Spacer from './Spacer';
 import projects from '@/lib/projects';
 
 function Projects() {
   return (
     <>
-      <Spacer />
-      <h2 id='projects' className='font-roboto font-bold text-5xl mt-12'>
-        Projects
-      </h2>
+      <h2 className='ml-8 mt-12 font-roboto text-5xl font-bold'>Projects</h2>
+      <p className='ml-8 font-roboto text-3xl text-secondary'>
+        Front-End Developer Portfolio
+      </p>
       <div className='px-8'>
         {projects.map((project) => (
-          <ProjectCard cardInfo={project} />
+          <ProjectCard cardInfo={project} key={project.title} />
         ))}
       </div>
-      <div className='mb-24'></div>
     </>
   );
 }

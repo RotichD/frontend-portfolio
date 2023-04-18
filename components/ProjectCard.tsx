@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import photography from '../public/images/photography_portfolio_ss.png';
+
 import { SiGithub } from 'react-icons/si';
 import { FaGlobe } from 'react-icons/fa';
 import { projectData } from '@/typings';
@@ -10,27 +10,31 @@ type Props = {
 
 function ProjectCard({ cardInfo }: Props) {
   return (
-    <div className='max-w-screen-lg 2xl:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 w-full border mt-12 p-4 md:p-8 pb-0 rounded-xl shadow min-h-72'>
-      <div className='relative h-72 rounded p-8 md:py-0'>
+    <div className='min-h-72 mt-12 grid w-full max-w-screen-lg grid-cols-1 rounded-xl border bg-white p-4 pb-0 shadow md:grid-cols-2 md:p-8 2xl:max-w-screen-xl'>
+      <div
+        className={`relative h-72 rounded ${
+          cardInfo.isReversed && 'md:order-2'
+        }`}
+      >
         <a href={cardInfo.liveUrl} target='_blank'>
           <Image
             alt='Project Screenshot'
             src={cardInfo.imgSrc}
             height={500}
-            className='absolute inset-0 w-full h-full object-cover object-top hover:opacity-70'
+            className='absolute inset-0 h-full w-full rounded-lg object-cover object-top shadow-md hover:opacity-70'
           />
         </a>
       </div>
-      <div className='flex flex-col space-y-4 p-8 md:py-0 md:border-l border-t md:border-t-0'>
-        <h4 className='text-3xl sm:text-4xl font-roboto font-bold text-secondary'>
+      <div className='flex flex-col space-y-4 border-t p-8 md:border-t-0 md:py-0'>
+        <h4 className='text-center font-roboto text-3xl font-bold text-secondary sm:text-4xl'>
           {cardInfo.title}
         </h4>
-        <p className='md:text-lg text-justify'>{cardInfo.description}</p>
-        <div className='flex items-center space-x-3'>
+        <p className='text-center md:text-lg'>{cardInfo.description}</p>
+        <div className='flex items-center justify-center space-x-3'>
           <a
             href={cardInfo.liveUrl}
             target='_blank'
-            className='flex items-center border border-black py-1 px-2 rounded-lg shadow font-roboto'
+            className='flex items-center rounded-lg border border-black px-2 py-1 font-roboto shadow transition duration-200 hover:scale-105 hover:text-primary'
           >
             <FaGlobe className='mr-2' />
             Live Site
@@ -38,15 +42,17 @@ function ProjectCard({ cardInfo }: Props) {
           <a
             href={cardInfo.repoUrl}
             target='_blank'
-            className='flex items-center border border-black py-1 px-2 rounded-lg shadow font-roboto'
+            className='flex items-center rounded-lg border border-black px-2 py-1 font-roboto shadow transition duration-200 hover:scale-105 hover:text-primary'
           >
             <SiGithub className='mr-2' />
             Repo
           </a>
         </div>
-        <div className='flex flex-wrap space-x-2'>
+        <div className='flex flex-wrap justify-center space-x-2'>
           {cardInfo.tags.map((tag) => (
-            <p className='techTag'>{tag}</p>
+            <p className='techTag' key={tag}>
+              {tag}
+            </p>
           ))}
         </div>
       </div>

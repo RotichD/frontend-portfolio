@@ -7,6 +7,7 @@ type projectData = {
   liveUrl: string;
   repoUrl: string;
   tags: string[];
+  isReversed?: boolean;
 };
 
 type projectDataArray = projectData[];

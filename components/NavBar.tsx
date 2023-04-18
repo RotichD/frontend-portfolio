@@ -2,19 +2,19 @@ import Link from 'next/link';
 
 function NavBar() {
   return (
-    <nav className='bg-white fixed w-full z-20 top-0 left-0 border-b text-black font-roboto md:border-none'>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-        <Link href='#home' className='flex items-center'>
+    <nav className='fixed left-0 top-0 z-20 w-full border-b bg-white font-roboto text-black shadow md:border-none'>
+      <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4'>
+        <Link href='#' className='flex items-center'>
           <span className='self-center text-2xl font-semibold'>
             Dylan Rotich
           </span>
         </Link>
 
         <div
-          className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:text-2xl'
+          className='hidden w-full items-center justify-between md:order-1 md:flex md:w-auto md:text-2xl'
           id='navbar-sticky'
         >
-          <ul className='flex flex-col md:items-center p-4 md:p-0 mt-4 border font-bold border-gray-100  md:flex-row md:space-x-8 md:mt-0 md:border-0'>
+          <ul className='mt-4 flex flex-col border border-gray-100 p-4 font-bold md:mt-0 md:flex-row  md:items-center md:space-x-8 md:border-0 md:p-0'>
             <li>
               <a href='#about' className='navLink'>
                 About
@@ -26,14 +26,14 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a href='#' className='navLink'>
+              <a href='#contact' className='navLink'>
                 Contact
               </a>
             </li>
             <li>
               <button
                 type='button'
-                className='hidden md:flex items-center bg-secondary hover:animate-pulse focus:ring-2 focus:outline-none md:mr-0 focus:ring-blue-300 font-medium rounded-lg text-base px-3 py-1.5 text-center  text-white'
+                className='hidden items-center rounded-lg bg-secondary px-3 py-1.5 text-center text-base font-medium text-white hover:animate-pulse focus:outline-none focus:ring-2 focus:ring-blue-300 md:mr-0  md:flex'
               >
                 Resume
                 <svg
@@ -42,7 +42,7 @@ function NavBar() {
                   viewBox='0 0 24 24'
                   strokeWidth={1.5}
                   stroke='currentColor'
-                  className='w-5 h-5 ml-2'
+                  className='ml-2 h-5 w-5'
                 >
                   <path
                     strokeLinecap='round'
@@ -62,7 +62,7 @@ function NavBar() {
             viewBox='0 0 24 24'
             strokeWidth={1.5}
             stroke='currentColor'
-            className='w-10 h-10'
+            className='h-10 w-10'
           >
             <path
               strokeLinecap='round'

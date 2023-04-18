@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${roboto.variable} ${cabin.variable} font-cabin`}>
+      <body className={`${roboto.variable} ${cabin.variable} `}>
         <NavBar />
         {children}
       </body>

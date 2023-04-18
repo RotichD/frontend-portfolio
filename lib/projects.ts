@@ -27,6 +27,7 @@ const projects: projectDataArray = [
       'OpenAI',
       'Google Auth',
     ],
+    isReversed: true,
   },
 ];
 
