@@ -1,4 +1,5 @@
 import './globals.css';
+import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 import { Roboto_Condensed, Cabin } from 'next/font/google';
 
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${roboto.variable} ${cabin.variable} `}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

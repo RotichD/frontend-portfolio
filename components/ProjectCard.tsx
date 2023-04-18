@@ -34,7 +34,7 @@ function ProjectCard({ cardInfo }: Props) {
           <a
             href={cardInfo.liveUrl}
             target='_blank'
-            className='flex items-center rounded-lg border border-black px-2 py-1 font-roboto shadow transition duration-200 hover:scale-105 hover:text-primary'
+            className='flex items-center rounded-lg border border-black px-2 py-1 font-roboto shadow transition duration-200 hover:scale-105 hover:border-blue-600 hover:text-blue-600'
           >
             <FaGlobe className='mr-2' />
             Live Site
@@ -42,7 +42,7 @@ function ProjectCard({ cardInfo }: Props) {
           <a
             href={cardInfo.repoUrl}
             target='_blank'
-            className='flex items-center rounded-lg border border-black px-2 py-1 font-roboto shadow transition duration-200 hover:scale-105 hover:text-primary'
+            className='flex items-center rounded-lg border border-black px-2 py-1 font-roboto shadow transition duration-200 hover:scale-105 hover:border-blue-600 hover:text-blue-600'
           >
             <SiGithub className='mr-2' />
             Repo

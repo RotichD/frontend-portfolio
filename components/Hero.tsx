@@ -24,7 +24,7 @@ function Hero() {
           <MdLocationPin />
           San Francisco Bay Area
         </p>
-        <p className='max-w-md text-justify md:text-xl'>
+        <p className='max-w-md md:text-xl'>
           Known as a creative problem solver and supporting team member, I
           eagerly approach each project with a focus on mobile first design and
           brand image.

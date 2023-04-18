@@ -1,6 +1,7 @@
 import { projectDataArray } from '@/typings';
 import screenshot from '../public/images/photography_portfolio_ss.png';
 import yukno from '../public/images/yukno_ss.png';
+import spoofy from '../public/images/spoofy_ss.png';
 
 const projects: projectDataArray = [
   {
@@ -28,6 +29,21 @@ const projects: projectDataArray = [
       'Google Auth',
     ],
     isReversed: true,
+  },
+  {
+    imgSrc: spoofy,
+    title: 'Spoofy | Spotify Clone',
+    description:
+      'This Web App Controls any instance of Spotify Player running on another app or device. (example: TV, Amazon Echo, Web App, Desktop App, Mobile App)',
+    liveUrl: 'https://spoofy.vercel.app',
+    repoUrl: 'https://github.com/RotichD/spotify-clone',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'TailwindCSS',
+      'Spotify Auth',
+      'Spotify API',
+    ],
   },
 ];
 
