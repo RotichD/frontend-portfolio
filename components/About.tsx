@@ -36,10 +36,10 @@ function About() {
               </a>{' '}
               with a well rounded training in the Full-Stack (MERN) from the UC
               Berkeley Extension Coding Bootcamp. During my first internship, I
-              quickly gravitated towards the front-end where I excell in
-              creating and maintining delightful and mobile friendly websites.
-              When I&apos;m not coding I spend my free time practicing
-              photography 📸 and producing music 🎵.
+              quickly gravitated towards the front-end where I excel in creating
+              and maintaining delightful and mobile friendly websites. When
+              I&apos;m not coding I spend my free time practicing photography 📸
+              and producing music 🎵.
             </p>
           </div>
         </div>

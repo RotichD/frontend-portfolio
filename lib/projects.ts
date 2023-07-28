@@ -2,8 +2,43 @@ import { projectDataArray } from '@/typings';
 import screenshot from '../public/images/photography_portfolio_ss.png';
 import yukno from '../public/images/yukno_ss.png';
 import spoofy from '../public/images/spoofy_ss.png';
+import admin from '../public/images/admin_dark.png';
+import store from '../public/images/store_large.png';
 
 const projects: projectDataArray = [
+  {
+    imgSrc: admin,
+    title: 'Admin Dashboard CMS Backend',
+    description:
+      'Custom made CMS powered by Prisma + MySql managed backend (PlanetScale)',
+    liveUrl: 'https://github.com/RotichD/ecommerce-admin',
+    repoUrl: 'https://github.com/RotichD/ecommerce-admin',
+    tags: [
+      'Prisma',
+      'Planetscale',
+      'TypeScript',
+      'Next.js',
+      'TailwindCSS',
+      'Clerk Auth',
+      'Stripe',
+    ],
+  },
+  {
+    imgSrc: store,
+    title: 'Streetwear E-Commerce Store',
+    description: 'Front End Online E-Commerce Store',
+    liveUrl: 'https://ecommerce-storefront-ivory.vercel.app/',
+    repoUrl: 'https://github.com/RotichD/ecommerce-storefront',
+    tags: [
+      'TypeScript',
+      'React',
+      'Next.js',
+      'TailwindCSS',
+      'Zustand',
+      'HeadlessUI',
+    ],
+    isReversed: true,
+  },
   {
     imgSrc: screenshot,
     title: 'Photographer Portfolio',
@@ -41,6 +76,7 @@ const projects: projectDataArray = [
       'Next.js',
       'TypeScript',
       'TailwindCSS',
+      'Recoil.js',
       'Spotify Auth',
       'Spotify API',
     ],
